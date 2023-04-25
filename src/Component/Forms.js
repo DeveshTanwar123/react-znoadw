@@ -12,9 +12,9 @@ function Forms() {
   const onSubmit = () => {
     setFullName(name);
   };
-  // const handleChange = (event) => {
-  //   setEnglish(event.target.name);
-  // };
+  const handleChange = () => {
+    setSubjects('sakshi');
+  };
   return (
     <div className="App">
       <form>
@@ -48,8 +48,9 @@ function Forms() {
             value={Subjects}
             id="Subjects"
             name="Subjects"
-            onChange={(e) => setSubjects(e.target.value)}
+            onChange={handleChange}
           >
+            <h1>{Subjects}</h1>
             <option value="">subject</option>
             <option value="English">English</option>
             <h1>{Subjects}</h1>
